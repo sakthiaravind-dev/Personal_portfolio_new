@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Code, Database, Globe, Smartphone } from 'lucide-react';
+import developerImage from '../assets/200.jpg';
+
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -66,30 +68,25 @@ const About = () => {
                 Crafting Digital Experiences
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                I'm a passionate software developer with over 5 years of experience 
-                building web applications and software solutions. My journey started 
-                with curiosity about how things work behind the screens, and it has 
-                evolved into a career dedicated to creating meaningful digital experiences.
+                Hey! I’m Sakthi Aravind — a Full Stack Developer from Chennai, currently studying Computer Science with a focus on Cybersecurity at SRM University. I love building cool, functional stuff that makes life easier (and looks good while doing it). Over the past few years, I’ve worked on everything from VR learning tools for kids with special needs to full-blown ERP systems for gyms with thousands of members. During my internship at Mediatrix, I got to lead a dev team, work with real clients, and deploy apps using platforms like Vercel and Render.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                I specialize in full-stack development with expertise in modern 
-                JavaScript frameworks, cloud technologies, and database systems. 
-                I believe in writing clean, maintainable code and following best 
-                practices to deliver high-quality solutions.
+                I'm pretty comfortable with tools like React, Next.js, React Native, Firebase, Supabase, Docker, MySQL, and AWS. On top of that, I have a growing interest in digital marketing and forex trading — always curious to learn something new and mix tech with real-world strategy.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open-source projects, or sharing knowledge with 
-                the developer community.
+               Whether it's coding, designing, or figuring out how to make an app run faster and smoother, I'm all about solving problems and having fun doing it.
+
+Let’s build something awesome together!
               </p>
             </div>
             
             <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
               <img 
-                src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Developer workspace"
-                className="rounded-lg shadow-2xl hover:scale-105 transition-all duration-500 hover:shadow-3xl"
-              />
+  src={developerImage}
+  alt="Developer workspace"
+  className="w-full max-w-sm mx-auto rounded-lg shadow-2xl hover:scale-105 transition-all duration-500 hover:shadow-3xl"
+/>
+
             </div>
           </div>
           

@@ -23,12 +23,13 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+  isScrolled ? 'bg-white/40 backdrop-blur-md shadow-md' : 'bg-transparent'
+}`}>
+
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-navy-900">
-            Sakthi<span className="text-teal-600">Aravind</span>
+            S<span className="text-teal-600">A</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -39,7 +40,7 @@ const Header = () => {
             <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
             <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
             <button className="btn-primary flex items-center gap-2">
-              <Download size={16} />
+              <Download size={14} />
               Resume
             </button>
           </div>
@@ -63,7 +64,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('experience')} className="nav-link text-left">Experience</button>
               <button onClick={() => scrollToSection('contact')} className="nav-link text-left">Contact</button>
               <button className="btn-primary flex items-center gap-2 w-fit">
-                <Download size={16} />
+                <Download size={14} />
                 Resume
               </button>
             </div>

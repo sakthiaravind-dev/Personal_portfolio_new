@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
+import suitImage from '../assets/100.jpg';
 
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <div className={`mb-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <img 
-              src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400" 
+              src={suitImage} 
               alt="Sakthi Aravind"
               className="w-48 h-48 rounded-full mx-auto mb-8 shadow-2xl border-4 border-white object-cover hover:scale-105 transition-all duration-500 hover:shadow-3xl hover:border-teal-200"
             />
@@ -59,13 +60,13 @@ const Hero = () => {
           </div>
           
           <div className={`flex justify-center space-x-6 mb-16 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <a href="https://github.com" className="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/sakthiaravind-dev" className="social-link" target="_blank" rel="noopener noreferrer">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" className="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sakthi-aravind-m-6064a2242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="social-link" target="_blank" rel="noopener noreferrer">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:contact@example.com" className="social-link">
+            <a href="mailto:sakthicareer.edu@gmail.com" className="social-link">
               <Mail size={24} />
             </a>
           </div>
