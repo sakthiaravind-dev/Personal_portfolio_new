@@ -36,7 +36,7 @@ const Hero = () => {
             />
           </div>
           
-          <h1 className={`text-5xl md:text-7xl font-bold text-navy-900 mb-6 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h1 className={`text-5xl md:text-7xl  font-sans font-bold text-navy-900 mb-6 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             Hi, I'm <span className="text-teal-600">Sakthi Aravind</span>
           </h1>
           

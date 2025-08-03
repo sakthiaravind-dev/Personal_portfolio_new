@@ -71,7 +71,7 @@ const About = () => {
                 Hey! I’m Sakthi Aravind — a Full Stack Developer from Chennai, currently studying Computer Science with a focus on Cybersecurity at SRM University. I love building cool, functional stuff that makes life easier (and looks good while doing it). Over the past few years, I’ve worked on everything from VR learning tools for kids with special needs to full-blown ERP systems for gyms with thousands of members. During my internship at Mediatrix, I got to lead a dev team, work with real clients, and deploy apps using platforms like Vercel and Render.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                I'm pretty comfortable with tools like React, Next.js, React Native, Firebase, Supabase, Docker, MySQL, and AWS. On top of that, I have a growing interest in digital marketing and forex trading — always curious to learn something new and mix tech with real-world strategy.
+                I'm pretty comfortable with tools like React, Next.js, React Native, Python, Java, Firebase, Supabase, Docker, MySQL, and AWS. On top of that, I have a growing interest in digital marketing and forex trading — always curious to learn something new and mix tech with real-world strategy.
               </p>
               <p className="text-gray-600 leading-relaxed">
                Whether it's coding, designing, or figuring out how to make an app run faster and smoother, I'm all about solving problems and having fun doing it.

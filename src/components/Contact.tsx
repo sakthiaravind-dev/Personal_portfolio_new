@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
+  const [status, setStatus] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -18,10 +21,25 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+
+    emailjs.send(
+      'service_5u7y4aw', //service ID
+      'template_86s8mnw', //template ID
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      'cTq9yLCM4CyUIgN1w' // EmailJS public key
+    )
+    .then(() => {
+      setStatus('Message sent successfully!');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    })
+    .catch(() => {
+      setStatus('Something went wrong. Please try again.');
+    });
   };
 
   return (
@@ -81,10 +99,10 @@ const Contact = () => {
               <div>
                 <h4 className="font-semibold text-navy-900 mb-4">Follow Me</h4>
                 <div className="flex space-x-4">
-                  <a href="https://github.com" className="social-link" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/sakthiaravind-dev" className="social-link" target="_blank" rel="noopener noreferrer">
                     <Github size={20} />
                   </a>
-                  <a href="https://linkedin.com" className="social-link" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/sakthi-aravind-m-6064a2242" className="social-link" target="_blank" rel="noopener noreferrer">
                     <Linkedin size={20} />
                   </a>
                   <a href="https://twitter.com" className="social-link" target="_blank" rel="noopener noreferrer">
@@ -170,6 +188,12 @@ const Contact = () => {
                   <Send size={18} />
                   Send Message
                 </button>
+
+                {status && (
+                  <p className={`text-sm mt-4 ${status.includes('successfully') ? 'text-green-600' : 'text-red-600'}`}>
+                    {status}
+                  </p>
+                )}
               </form>
             </div>
           </div>

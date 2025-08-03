@@ -39,10 +39,15 @@ const Header = () => {
             <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
             <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
             <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
-            <button className="btn-primary flex items-center gap-2">
-              <Download size={14} />
-              Resume
-            </button>
+            <a 
+  href="/Resume_SakthiAravind.pdf" 
+  download 
+  className="btn-primary flex items-center gap-2"
+>
+  <Download size={14} />
+  Resume
+</a>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -63,10 +68,15 @@ const Header = () => {
               <button onClick={() => scrollToSection('projects')} className="nav-link text-left">Projects</button>
               <button onClick={() => scrollToSection('experience')} className="nav-link text-left">Experience</button>
               <button onClick={() => scrollToSection('contact')} className="nav-link text-left">Contact</button>
-              <button className="btn-primary flex items-center gap-2 w-fit">
-                <Download size={14} />
-                Resume
-              </button>
+              <a 
+  href="/Resume_SakthiAravind.pdf" 
+  download 
+  className="btn-primary flex items-center gap-2 w-fit"
+>
+  <Download size={14} />
+  Resume
+</a>
+
             </div>
           </div>
         )}

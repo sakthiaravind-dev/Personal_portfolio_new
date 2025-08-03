@@ -30,7 +30,7 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Rubik', 'sans-serif'],
       },
       animation: {
         'blob': 'blob 7s infinite',

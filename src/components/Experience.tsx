@@ -5,11 +5,11 @@ const Experience = () => {
   const experiences = [
     {
       type: 'work',
-      title: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      description: 'Led development of scalable web applications serving 100K+ users. Implemented microservices architecture and improved system performance by 40%.',
+      title: 'Software and Project development Lead',
+      company: 'MediaTrix.',
+      location: 'Chennai, India',
+      period: '2024 - 2025',
+      description: 'Led development of scalable web applications serving 100+ users. Implemented microservices architecture and improved system performance by 40%.',
       achievements: [
         'Architected and built a real-time analytics dashboard',
         'Mentored junior developers and established coding standards',
@@ -17,11 +17,11 @@ const Experience = () => {
       ]
     },
     {
-      type: 'work',
+      type: 'Work',
       title: 'Full Stack Developer',
-      company: 'Digital Innovations Ltd.',
-      location: 'New York, NY',
-      period: '2020 - 2022',
+      company: 'Freelancing.',
+      location: 'Remote',
+      period: '2024 - present',
       description: 'Developed and maintained multiple client projects using React, Node.js, and cloud technologies. Collaborated with cross-functional teams to deliver high-quality solutions.',
       achievements: [
         'Built 15+ responsive web applications',
@@ -30,42 +30,26 @@ const Experience = () => {
       ]
     },
     {
-      type: 'work',
-      title: 'Frontend Developer',
-      company: 'Creative Web Agency',
-      location: 'Austin, TX',
-      period: '2019 - 2020',
-      description: 'Specialized in creating responsive and interactive user interfaces. Worked closely with designers to implement pixel-perfect designs and smooth user experiences.',
-      achievements: [
-        'Delivered 20+ client projects on time and budget',
-        'Optimized website performance achieving 95+ Lighthouse scores',
-        'Implemented accessibility standards (WCAG 2.1)'
-      ]
-    },
-    {
-      type: 'education',
-      title: 'Master of Science in Computer Science',
-      company: 'Stanford University',
-      location: 'Stanford, CA',
-      period: '2017 - 2019',
+      type: 'Education',
+      title: 'Bachelor of Technology in Computer Science',
+      company: 'SRM University',
+      location: 'Chennai, India',
+      period: '2012 - 2016',
       description: 'Specialized in Software Engineering and Machine Learning. Completed thesis on "Scalable Web Application Architecture".',
       achievements: [
-        'GPA: 3.8/4.0',
-        'Research published in ACM Digital Library',
-        'Teaching Assistant for Data Structures course'
+        'GPA: 9.50/10.0',
+        'Receiver of University Topper Award in 2022'
       ]
     },
     {
-      type: 'education',
-      title: 'Bachelor of Technology in Information Technology',
-      company: 'Anna University',
-      location: 'Chennai, India',
-      period: '2013 - 2017',
-      description: 'Foundation in computer science fundamentals, software development, and database systems.',
+      type: 'Education',
+      title: 'High School Diploma',
+      company: 'Alagar Public School',
+      location: 'Tuticorin, India',
+      period: '2020 - 2022',
+      description: 'Graduated with a focus on Science and Mathematics. Active member of the coding club and science fair participant.',
       achievements: [
-        'First Class with Distinction',
-        'Winner of Inter-college Programming Contest',
-        'President of Computer Science Club'
+        'Top 3% of class',
       ]
     }
   ];

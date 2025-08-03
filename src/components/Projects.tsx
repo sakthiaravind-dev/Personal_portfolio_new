@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, ExternalLink, Code, Database, Smartphone } from 'lucide-react';
+import VrImage from '../assets/500.jpg';
+import GymImage from '../assets/600.jpg';
+import EcomImage from '../assets/800.jpg';
+import BabyImage from '../assets/700.jpg';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,59 +28,41 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment integration, and admin dashboard.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redux"],
-      github: "https://github.com",
+      title: "Baby Care App",
+      description: "A full-stack android application with React-native, Expo-Go and Supabase. Features include user authentication, Daily logs, Real time tracking of activities, and Memories.",
+      image: BabyImage,
+      technologies: ["React-Native", "Node.js", "Supabase", "Expo-Go", "APK"],
+      github: "https://github.com/sakthiaravind-dev/New-Parent-Application",
       live: "https://example.com",
-      category: "Full Stack"
+      category: "Android App"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking.",
-      image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Vue.js", "Express", "MongoDB", "Socket.io", "JWT"],
-      github: "https://github.com",
+      title: "Gym ERP",
+      description: "A Database management system designed exclusively for Gyms, Features include Customer data management using database automation and to record digital attendance.",
+      image: GymImage,
+      technologies: ["React", "Supabase", "Tailwind CSS", "Vite", "Render"],
+      github: "https://github.com/sakthiaravind-dev/Gym-ERP",
       live: "https://example.com",
       category: "Web App"
     },
     {
-      title: "Weather Analytics Dashboard",
-      description: "A data visualization dashboard for weather analytics with interactive charts, real-time data updates, and predictive modeling.",
-      image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "D3.js", "Python", "FastAPI", "Redis"],
-      github: "https://github.com",
+      title: "VR based learning tool for children with ASD",
+      description: "An Interative VR application designed to help children with Autism Spectrum Disorder (ASD) learn social, cognitive and communicative skills through immersive experiences.",
+      image: VrImage,
+      technologies: ["React", "Python", "MongoDB", "Firebase", "Vercel"],
+      github: "https://github.com/sakthiaravind-dev/VR-based-Learning-tool",
       live: "https://example.com",
-      category: "Data Visualization"
+      category: "web App"
     },
     {
-      title: "Mobile Fitness Tracker",
+      title: "E-Commerce Platform",
       description: "A React Native mobile app for fitness tracking with workout plans, progress monitoring, and social features.",
-      image: "https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: EcomImage,
       technologies: ["React Native", "Firebase", "Redux", "Expo", "TypeScript"],
       github: "https://github.com",
       live: "https://example.com",
       category: "Mobile"
     },
-    {
-      title: "AI Content Generator",
-      description: "An AI-powered content generation tool with natural language processing capabilities and custom model training.",
-      image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Python", "TensorFlow", "Flask", "OpenAI API", "Docker"],
-      github: "https://github.com",
-      live: "https://example.com",
-      category: "AI/ML"
-    },
-    {
-      title: "Real Estate Platform",
-      description: "A comprehensive real estate platform with property listings, virtual tours, and advanced search filters.",
-      image: "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "AWS S3", "Mapbox"],
-      github: "https://github.com",
-      live: "https://example.com",
-      category: "Web Platform"
-    }
   ];
 
   const getCategoryIcon = (category: string) => {
