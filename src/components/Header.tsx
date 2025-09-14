@@ -40,7 +40,7 @@ const Header = () => {
             <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
             <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
             <a 
-  href="/Resume_SakthiAravind.pdf" 
+  href="https://drive.google.com/file/d/1TwvMGmSs6QC308IlAnfJ9nmlWmPQn9Hx/view?usp=drivesdk" 
   download 
   className="btn-primary flex items-center gap-2"
 >
@@ -69,7 +69,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('experience')} className="nav-link text-left">Experience</button>
               <button onClick={() => scrollToSection('contact')} className="nav-link text-left">Contact</button>
               <a 
-  href="/Resume_SakthiAravind.pdf" 
+  href="https://drive.google.com/file/d/1TwvMGmSs6QC308IlAnfJ9nmlWmPQn9Hx/view?usp=drivesdk" 
   download 
   className="btn-primary flex items-center gap-2 w-fit"
 >
